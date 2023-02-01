@@ -1,0 +1,22 @@
+div.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    main {
+        width: 50%;
+        height: 90%;
+        background-color: #303030;
+        border-radius: 50px;
+        display: grid;
+        grid-template-rows: 10% 1fr 10%;
+        place-items: center;
+        h2.Title {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid rgb(87, 86, 86);
+        }
+    }
+}
