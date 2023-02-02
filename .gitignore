@@ -9,6 +9,9 @@ lerna-debug.log*
 
 .env
 
+FirebaseConfig
+
+
 node_modules
 dist
 dist-ssr

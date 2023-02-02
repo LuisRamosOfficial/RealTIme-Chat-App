@@ -1,4 +1,73 @@
 div.Messages {
-    width: 100%;
+    width: 95%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    &::-webkit-scrollbar-track {
+        background-color: rgb(35, 35, 35);
+        border-radius: 10px;
+        
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgb(154, 154, 154);
+        
+    }
+
+    &::-webkit-scrollbar {
+            width: 10px;
+            color: white;
+        }
+    li {
+        margin-top: 20px;
+        width: 100%;
+        place-items: center;
+        display: grid;
+        grid-template-columns:  40px 1fr;
+        grid-template-rows: 40px auto;
+        img.icon {grid-column-start: 1;
+            grid-row-start: 1;
+            width: 100%;
+            border-radius: 30px;
+        }
+        img.delete {grid-column-start: 1;
+            grid-row-start: 2;
+            width: 80%;
+            border-radius: 30px;
+            cursor: pointer;
+            &:hover {
+                filter: brightness(0.9);
+            }
+        }
+        div.TitleDate {
+            margin: 0;
+            padding: 0;
+            width: 96%;
+            display: flex;
+            p {
+                font-size: 1.0rem;
+                margin: 0;
+                padding: 0;
+                font-weight: 800;
+            }
+            p.Date {
+                font-weight: 400;
+                margin-left: 1rem;
+                font-size: 0.7rem;
+                color: gray;
+            }
+
+            justify-content: flex-start;
+        }
+        p.messagebox {
+            grid-row-start: 2;
+            grid-column-start:2 ;
+            height: auto;
+            width: 90%;
+            font-size: 1rem;
+            text-align:justify;
+            color: rgb(198, 198, 198);
+        }
+    }
 }
