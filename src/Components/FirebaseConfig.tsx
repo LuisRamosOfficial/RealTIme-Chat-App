@@ -1,5 +1,5 @@
 export const firebaseConfig = {
-	apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+	apiKey: 'AIzaSyAeEEBKQ3g7aW0wNlR26mOqD4DLTA_gJTY',
 	authDomain: 'realtime-app-d2f63.firebaseapp.com',
 	projectId: 'realtime-app-d2f63',
 	storageBucket: 'realtime-app-d2f63.appspot.com',
